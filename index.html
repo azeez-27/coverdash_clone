@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coverdash Clone - By Abdul Aziz for Proton Effect</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/images/coverdash_favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" id="myNavbar">
+        <div class="flex-container">
+          <a class="active" href="#">
+            <img
+              class="logo"
+              src="./assets/images/coverdash_logo.webp"
+              alt="Coverdash Logo"
+            />
+          </a>
+
+          <a class="active" href="#home">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Who We Insure</button>
+            <div class="dropdown-content">
+              <a href="#">Small Business</a>
+              <a href="#">Startup</a>
+              <a href="#">E-Commerce</a>
+              <a href="#">Freelancer</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Coverage</button>
+            <div class="dropdown-content">
+              <a href="#">General Liability</a>
+              <a href="#">Business Owners Policy</a>
+              <a href="#">Workers Compensation</a>
+              <a href="#">Cyber</a>
+              <a href="#">Professional Liability</a>
+              <a href="#">Management Liability</a>
+            </div>
+          </div>
+
+          <a href="#partner">Partner</a>
+          <a href="#blog">Blog</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+              <a href="#">Our Team</a>
+              <a href="#">Join Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="actions">
+            <button class="chip-button">
+              <span>&#9742;</span>
+              <a href="tel:1-888-880-3274"> 1(888) 880-DASH </a>
+            </button>
+            <button class="login-button">Login</button>
+            <button class="quote-button">Get a Quote &rarr;</button>
+          </div>
+
+          <a href="#" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-column">
+      <section class="hero flex">
+        <div class="hero-left flex flex-column justify-space">
+          <div>
+            <button class="chip-button main-section-chip">
+              <a href="#">
+                Read about our Series A funding announcement
+                <strong>&#8599;</strong></a
+              >
+            </button>
+          </div>
+          <div>
+            <h1>Business insurance<br />in a dash for</h1>
+            <h1 id="heading-rotator" class="primary-color">
+              ecommerce merchants.
+            </h1>
+          </div>
+          <div>
+            <p>
+              Tailored risk management for your growing business. From quote to
+              coverage in clicks, not weeks.
+            </p>
+          </div>
+          <div>
+            <button class="quote-button large-btn">Get a Quote &rarr;</button>
+          </div>
+        </div>
+
+        <div class="hero-right flex flex-column justify-space">
+          <div class="my-slides left-to-right">
+            <img src="./assets/images/ecommerce.jpg" />
+          </div>
+
+          <div class="my-slides left-to-right">
+            <img src="./assets/images/startup.jpg" />
+          </div>
+
+          <div class="my-slides left-to-right">
+            <img src="./assets/images/freelancer.jpg" />
+          </div>
+
+          <div class="my-slides left-to-right">
+            <img src="./assets/images/small-business.jpg" />
+          </div>
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="icons-section">
+        <div class="flex flex-column align-center">
+          <h2>In the Press</h2>
+          <div class="icons-row">
+            <img
+              class="icon-items"
+              src="./assets/images/business-insider-logo.png"
+            />
+            <img class="icon-items" src="./assets/images/techcrunch-logo.png" />
+            <img class="icon-items" src="./assets/images/axios-logo.png" />
+            <img class="icon-items" src="./assets/images/reuters-logo.png" />
+            <img class="icon-items" src="./assets/images/cnbc-logo.png" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="steps-section flex flex-column justify-space align-center"
+      >
+        <h2 class="lg-font">
+          3 Simple steps to <span class="primary-color">instant</span> coverage
+        </h2>
+        <p class="text-grey-500">
+          Fast, easy, and reliable coverage that reaches businesses where they
+          are, when they need it
+        </p>
+
+        <div class="steps-row">
+          <div class="steps-column">
+            <img src="./assets/images/step1.svg" />
+            <div class="steps-row-inside">
+              <div class="column-item text-6xl font-bold text-grey-300">1</div>
+              <div class="column-item text-2xl text-grey-600">
+                Tell us what you do
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-column">
+            <img src="./assets/images/step2.svg" />
+            <div class="steps-row-inside">
+              <div class="column-item text-6xl font-bold text-grey-300">2</div>
+              <div class="column-item text-2xl text-grey-600">
+                Select your policy
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-column">
+            <img src="./assets/images/step3.svg" />
+            <div class="steps-row-inside">
+              <div class="column-item text-6xl font-bold text-grey-300">3</div>
+              <div class="column-item text-2xl text-grey-600">
+                Get instant coverage
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="banner">
+          <div class="banner-content">
+            <div class="text-content">
+              <h1>
+                Business insurance in a <span class="primary-color">dash.</span>
+              </h1>
+              <button href="#" class="quote-button banner-btn">
+                Get a quote
+              </button>
+            </div>
+          </div>
+          <div class="banner-image">
+            <img src="./assets/images/girl.svg" alt="Businesswoman" />
+          </div>
+        </div>
+        <div class="subscription">
+          <input type="email" placeholder="you@email.com" class="email-input" />
+          <button class="subscribe-button">Subscribe</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="flex flex-wrap justify-space">
+          <div class="footer-section">
+            <h3>Who We Insure</h3>
+            <ul>
+              <li><a href="#">Small Business</a></li>
+              <li><a href="#">Startup</a></li>
+              <li><a href="#">E-Commerce</a></li>
+              <li><a href="#">Freelancer</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>What We Cover</h3>
+            <ul>
+              <li><a href="#">General Liability</a></li>
+              <li><a href="#">Business Owner's Policy</a></li>
+              <li><a href="#">Workers Compensation</a></li>
+              <li><a href="#">Cyber</a></li>
+              <li><a href="#">Professional Liability</a></li>
+              <li><a href="#">Management Liability</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">File a Claim</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Compensation Disclosure</a></li>
+              <li><a href="#">Licenses</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-space footer-logo-section">
+        <div class="flex-column align-center justify-space">
+          <div class="footer-logo">
+            <a href="#">
+              <img
+                src="./assets/images/coverdash_logo.webp"
+                alt="Coverdash Logo"
+              />
+            </a>
+          </div>
+          <div class="footer-copyright">
+            &copy; 2024 Coverdash, Inc. All rights reserved.
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" class="social-icon twitter" title="Twitter">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/twitter.png"
+              alt="Twitter"
+            />
+          </a>
+          <a href="#" class="social-icon facebook" title="Facebook">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" class="social-icon instagram" title="Instagram">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#" class="social-icon linkedin" title="LinkedIn">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
